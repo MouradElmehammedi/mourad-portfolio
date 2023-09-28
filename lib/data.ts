@@ -4,8 +4,8 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import ecommerceAdminImg from "@/public/ecommerce-admin.png";
 import ecommerceStoreImg from "@/public/ecommerce-store.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import carQuestImg from "@/public/cars-showcase.png";
+import aiGenuisImg from "@/public/ai-generation.png";
 
 export const links = [
   {
@@ -97,36 +97,29 @@ export const projectsData = [
   {
     title: "Ecommerce (dashboard)",
     description: "An e-commerce management dashboard for efficiently managing orders, products, and store customization.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma", "Mongodb"],
     imageUrl: ecommerceAdminImg,
+    href: null
   },
   {
     title: "Ecommerce (store)",
     description:"A sleek and user-friendly e-commerce store featuring a wide range of products.",
     tags: ["React", "Next.js", "Typescript", "Tailwind"],
     imageUrl: ecommerceStoreImg,
+    href: 'https://ecommerce-store-gilt-two.vercel.app/'
+  },
+  {
+    title: "CarQuest",
+    description:"A car exploration website that allows users to explore detailed information about various car models, making it easy to find the perfect vehicle.",
+    tags: ["React", "Next.js", "Typescript", "Tailwind"],
+    imageUrl: carQuestImg,
+    href: 'https://cars-showcase-iota-navy.vercel.app/'
+  },
+  {
+    title: "Genius",
+    description:"AI-powered web platform that offers a diverse range of cutting-edge features and tools, showcased for exploration and utilization.",
+    tags: ["React", "Next.js", "Typescript", "Tailwind", "Prisma", "mongodb"],
+    imageUrl: aiGenuisImg,
+    href: 'https://genius-olive-mu.vercel.app/'
   },
 ] as const;
-
-// export const skillsData = [
-//   "JavaScript",
-//   "TypeScript",
-//   "Node.js",
-//   "React",
-//   "Next.js",
-//   "React-Native",
-//   "Express",
-//   "Nest.js",
-//   "Redux",
-//   "Tailwind",
-//   "HTML",
-//   "CSS",
-//   "SASS",
-//   "Git",
-//   "MongoDB",
-//   "Prisma",
-//   "GraphQL",
-//   "PostgreSQL",
-//   "MySQL",
-//   "Scrum"
-// ] as const;
