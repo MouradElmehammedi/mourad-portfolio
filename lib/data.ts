@@ -2,10 +2,15 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import ecommerceAdminImg from "@/public/ecommerce-admin.png";
 import ecommerceStoreImg from "@/public/ecommerce-store.png";
 import carQuestImg from "@/public/cars-showcase.png";
 import aiGenuisImg from "@/public/ai-generation.png";
+import navigram from "@/public/navigram.webp";
+import fresh11 from "@/public/2.png";
+import taxiApp from "@/public/1.png";
+import compiler from "@/public/compiler.jpg";
+import arabFit from "@/public/arabfit.png";
+import hacker from "@/public/hacker.png";
 
 export const links = [
   {
@@ -40,35 +45,29 @@ export const links = [
 
 export const educationsData = [
   {
-    title: "Baccalaureate",
-    location: "ALMATAR high school, Nador, Morocco",
-    description: "I successfully completed my Baccalaureate in Life and Earth Sciences (SVT) at ALMATAR high school in Nador, gaining a solid foundation in scientific principles and knowledge.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2016 - 2017",
-  },
-  {
     title: "Associate's degree in Computer Development",
-    location: "ISTA, Nador, Morocco",
+    location: "ISTA, OUJDA, Morocco",
     description: "I dedicated two years of hard work and learning at ISTA, where I earned my Specialized Technician Associate's degree in Computer Development. This program equipped me with the skills and knowledge necessary to excel in the field of software development.",
     icon: React.createElement(LuGraduationCap),
-    date: "2017 - 2019",
+    date: "2018 - 2020",
   },
   {
     title: "Engineer's degree",
     location: "SUPMTI, Oujda",
-    description: "My journey in higher education led me to SUPMTI-OUJDA, where I am currently pursuing an Engineer's degree in Computer Software Engineering. This program allows me to deepen my understanding of software engineering and expand my technical expertise.",
+    description: "My journey in higher education led me to SUPMTI-OUJDA, where I had my Engineer's degree in Computer Software Engineering. This program allows me to deepen my understanding of software engineering and expand my technical expertise.",
     icon: React.createElement(LuGraduationCap),
-    date: "2021 - 2024",
+    date: "2020 - 2023",
   },
 ] as const;
 
 export const experiencesData = [
   {
-    title: "Internship",
-    location: "Institute Descartes of Computer Science, Nador, Morocco",
-    description: "During my internship at the Institute Descartes of Computer Science, I was responsible for the installation and maintenance of computer operating systems and hardware and software packages. I provided regular technical assistance and conducted compatibility checks for new hardware and software to ensure they integrated seamlessly with company systems.",
+    title: "React Native Developer",
+    location: "FCPO, Oujda Morocco",
+    description: `Developed multiple mobile applications using React Native in various domains,including taxi services,food delivery, sports, and e-commerce. This involved theend-to-end development process, from designto deployment.
+    Created and published an NPM package, a React Native component that allowsfor interactive worldmaps with clickable continents. This package provided thecapability to configure colors and callbackfunctions for each continent.`,
     icon: React.createElement(CgWorkAlt),
-    date: "March 03, 2019 to April 04, 2019",
+    date: "October 2020 to june 2021",
   },
   {
     title: "Web Developer",
@@ -78,48 +77,62 @@ export const experiencesData = [
     date: "04 May 2020 to present",
   },
   {
-    title: "Internship",
-    location: "H2C-development, Nador, Morocco",
-    description: "During my internship at H2C-development, I served as a Front-End developer on various projects, leveraging the React.js Framework to create engaging and user-friendly web applications. This experience allowed me to strengthen my front-end development skills.",
-    icon: React.createElement(CgWorkAlt),
-    date: "October 2020 to January 2021",
-  },
-  {
     title: "Full Stack Developer",
-    location: "H2C-development, Nador, Morocco",
-    description: "I have been working as a Full Stack Developer at H2C Development since March 2021. In this role, I've contributed significantly to various projects, gaining valuable experience in both front-end and back-end development. I've played a pivotal role in building robust web applications that meet client needs and exceed expectations.",
+    location: "Navigram technologies",
+    description: `
+    Developed functionality using Navigram's internal 3D scripting language, VCL, toenhance theproduct. This included creating features such as measuringfunctions and cabinet configuration tools.
+Utilized JavaScript to build modules, including a linear division module thatautomatically calculatedshelf placements in cabinets based on user-definedinput.
+Worked on the front-end using HTML, CSS, UIKit, and JavaScript to implementuser interface (UI)features, enhancing the user experience of the product.
+Employed PHP to build server-side maintenance tools for configuring user filesand managing thedownload and upload of drawings.
+Utilized Docker to set up and maintain test servers, allowing for local applicationtesting anddevelopment with minimal commands.
+Designed and implemented a compiler to convert VCLX scripting language intoJavaScript-like syntax,improving the flexibility and interoperability of theproduct.
+    `,
     icon: React.createElement(FaReact),
-    date: "March 2021 - Present",
+    date: "June 2021 - Present",
   }
 ] as const;
 
 export const projectsData = [
   {
-    title: "Ecommerce (dashboard)",
-    description: "An e-commerce management dashboard for efficiently managing orders, products, and store customization.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma", "Mongodb"],
-    imageUrl: ecommerceAdminImg,
+    title: "Navigram Roomplanner",
+    description: "online software for interior designe ",
+    tags: ["HTML", "UIKIT", "MYSQL", "Javascript", "PHP", "3d scripting(VCL)"],
+    imageUrl: navigram,
+    href: 'https://www.navigram.com/',
+  },
+  {
+    title: "Ecommerce  app",
+    description:"A sleek and user-friendly e-commerce mobile app featuring a wide range of products.",
+    tags: ["React Native", "Symfony", "Typescript", "MySQL"],
+    imageUrl: fresh11,
     href: null
   },
   {
-    title: "Ecommerce (store)",
-    description:"A sleek and user-friendly e-commerce store featuring a wide range of products.",
-    tags: ["React", "Next.js", "Typescript", "Tailwind"],
-    imageUrl: ecommerceStoreImg,
-    href: 'https://ecommerce-store-gilt-two.vercel.app/'
+    title: "Taxi App",
+    description:"a taxi order app contains 2 parts driver and costumer.",
+    tags: ["React Native", "Symfony", "Typescript"],
+    imageUrl: taxiApp,
+    href: null
   },
   {
-    title: "CarQuest",
-    description:"A car exploration website that allows users to explore detailed information about various car models, making it easy to find the perfect vehicle.",
-    tags: ["React", "Next.js", "Typescript", "Tailwind"],
-    imageUrl: carQuestImg,
-    href: 'https://cars-showcase-iota-navy.vercel.app/'
+    title: "compiler",
+    description:"navigram technologies has its own skripting language (vcl) originally written in delphi  this compiler convert it to JavaScript like syntax",
+    tags: ["AST", "NodeJs"],
+    imageUrl: compiler,
+    href: null
   },
   {
-    title: "Genius",
-    description:"AI-powered web platform that offers a diverse range of cutting-edge features and tools, showcased for exploration and utilization.",
-    tags: ["React", "Next.js", "Typescript", "Tailwind", "Prisma", "mongodb"],
-    imageUrl: aiGenuisImg,
-    href: 'https://genius-olive-mu.vercel.app/'
+    title: "Gym app",
+    description:"an app guid you throw your fitness journey from exercise to healthy meals and more.",
+    tags: ["React Native", "NodeJs", "MangoDB"],
+    imageUrl: arabFit,
+    href: null
+  },
+  {
+    title: "hacker",
+    description:"hacker is one of the biggest kitchen retailers in europe we built a 3d configurator to design kitchens for there customers",
+    tags: ["HTML", "UIKIT", "Javascript", "PHP"],
+    imageUrl: hacker,
+    href: null
   },
 ] as const;

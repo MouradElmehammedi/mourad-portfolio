@@ -68,8 +68,6 @@ const skillsData = [
     { name: "MONGODB", logo: <SiMongodb /> },
     { name: "EXPRESS.JS", logo: <SiExpress /> }, 
     { name: "Prisma", logo: <SiPrisma /> },
-    { name: "GraphQL", logo: <SiGraphql /> }, 
-    { name: "PostgreSQL", logo: <SiPostgresql /> },
 
     { name: "GIT", logo: <SiGit /> },
     { name: "SCRUM", logo: <DiScrum /> },
