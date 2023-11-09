@@ -11,7 +11,7 @@ export default function Projects() {
 
   return (
     <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
-      <SectionHeading>Projects</SectionHeading>
+      <SectionHeading>My projects</SectionHeading>
       <div className="xl:grid xl:grid-cols-2">
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>

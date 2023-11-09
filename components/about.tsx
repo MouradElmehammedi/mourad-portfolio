@@ -18,23 +18,42 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
-      I'm Majid El Mehammedy, a dedicated and passionate software developer
-      with 5 years of experience in software development.
-      My journey has taken me from React Native mobile app development,
-      both as a full-time developer and freelancer, 
-      to a role as a Software Engineer specializing in 3D design software. 
-      With a background in Computer Software Engineering and 
-      Computer Science, I have honed my skills in JavaScript, React, NodeJs,
-      and more. I thrive on challenges, actively seeking opportunities
-      to apply my expertise and contribute to innovative projects. 
-      Let's connect and explore the possibilities in the dynamic world
-      of software development.
-      </p>
+      <p className="mb-3">As a passionate <span className="font-medium">Full Stack Developer</span>, 
+      I'm on a mission to transform creative ideas into seamless digital experiences. 
+      With expertise in <span className="underline">JavaScript</span>, <span className="underline">TypeScript</span>, <span className="underline">React.js</span>, and <span className="underline">Next.js</span>, 
+      I specialize in crafting elegant web solutions that users love. 
+      Currently contributing my skills at <span className="font-medium">H2C Development</span> for over <span className="font-medium">3 years</span>, 
+      I'm driven by a commitment to excellence. 
+      Holding an Engineer's degree in Computer Software Engineering from <span className="font-medium">SUPMTI-OUJDA</span> and a Bachelor's in Computer Development from the <span className="font-medium">Specialized Institute Of Applied Technology NTIC</span>, 
+      I've built a strong foundation for my career. 
+      Let's connect and explore innovative opportunities together.</p>
 
+      {/* <p className="mb-3">
+        After graduating with a degree in{" "}
+        <span className="font-medium">Accounting</span>, I decided to pursue my
+        passion for programming. I enrolled in a coding bootcamp and learned{" "}
+        <span className="font-medium">full-stack web development</span>.{" "}
+        <span className="italic">My favorite part of programming</span> is the
+        problem-solving aspect. I <span className="underline">love</span> the
+        feeling of finally figuring out a solution to a problem. My core stack
+        is{" "}
+        <span className="font-medium">
+          React, Next.js, Node.js, and MongoDB
+        </span>
+        . I am also familiar with TypeScript and Prisma. I am always looking to
+        learn new technologies. I am currently looking for a{" "}
+        <span className="font-medium">full-time position</span> as a software
+        developer.
+      </p> */}
 
-
-
+      {/* <p>
+        <span className="italic">When I'm not coding</span>, I enjoy playing
+        video games, watching movies, and playing with my dog. I also enjoy{" "}
+        <span className="font-medium">learning new things</span>. I am currently
+        learning about{" "}
+        <span className="font-medium">history and philosophy</span>. I'm also
+        learning how to play the guitar.
+      </p> */}
     </motion.section>
   );
 }
