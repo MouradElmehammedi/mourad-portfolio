@@ -1,8 +1,11 @@
-[![Watch tutorial here](https://img.youtube.com/vi/sUKptmUVIBM/0.jpg)](https://youtu.be/sUKptmUVIBM)
+# Portfolio Readme
 
-# [Watch video here](https://youtu.be/sUKptmUVIBM)
+## Introduction
 
-## What you will learn
+Welcome to my portfolio repository! This project serves as a comprehensive tutorial covering various aspects of web development using Next.js 13. 
+From fundamental concepts to advanced techniques, this tutorial aims to equip you with the skills necessary to create modern, responsive websites with a sleek UI design.
+
+## Features
 
 - Latest Next.js 13 features
 - Next.js App Router
@@ -18,13 +21,12 @@
 - Light & Dark mode
 - Responsive website
 
-## Important
+## Important Note
 
-If you want to be a professional developer, you have to know the fundamentals like JavaScript and CSS really well. I highly recommend you go through my [Professional JavaScript](https://www.udemy.com/course/professional-javascript-course/?referralCode=0C1D5752923168BC87C2) and [Professional CSS](https://www.udemy.com/course/professional-css/?referralCode=4C3C08E82629E6B15752) courses.
-
-I'm close to releasing a complete React & Next.js course. Get on the email list to receive early-bird pricing: [link](https://email.bytegrad.com/).
+To excel as a professional developer, it's essential to have a solid understanding of core technologies like JavaScript and CSS. 
+Consider strengthening your foundation by delving into fundamental courses on these topics.
 
 ## Setup
 
-1. Add RESEND_API_KEY environment variable in .env.local
-2. In the send-email.ts action file, change the "to" email to your own email
+1. Configure the `RESEND_API_KEY` environment variable in the `.env.local` file.
+2. Customize the recipient email address in the `send-email.ts` action file to your own email for testing purposes. 
