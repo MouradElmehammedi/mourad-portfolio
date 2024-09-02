@@ -7,7 +7,10 @@ import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
   const { ref } = useSectionInView("About");
-
+  const startYear = 2019;
+  const currentYear = new Date().getFullYear();
+  const yearsOfExperience = currentYear - startYear;
+  console.log(yearsOfExperience);
   return (
     <motion.section
       ref={ref}
@@ -18,15 +21,27 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">As a passionate <span className="font-medium">Full Stack Developer</span>, 
-      I'm on a mission to transform creative ideas into seamless digital experiences. 
-      With expertise in <span className="underline">JavaScript</span>, <span className="underline">TypeScript</span>, <span className="underline">React.js</span>, and <span className="underline">Next.js</span>, 
-      I specialize in crafting elegant web solutions that users love. 
-      Currently contributing my skills at <span className="font-medium">H2C Development</span> for over <span className="font-medium">3 years</span>, 
-      I'm driven by a commitment to excellence. 
-      Holding an Engineer's degree in Computer Software Engineering from <span className="font-medium">SUPMTI-OUJDA</span> and a Bachelor's in Computer Development from the <span className="font-medium">Specialized Institute Of Applied Technology NTIC</span>, 
-      I've built a strong foundation for my career. 
-      Let's connect and explore innovative opportunities together.</p>
+      <p className="mb-3">
+        As a passionate{" "}
+        <span className="font-medium">Full Stack Developer</span>, I'm on a
+        mission to transform creative ideas into seamless digital experiences.
+        With expertise in <span className="underline">JavaScript</span>,{" "}
+        <span className="underline">TypeScript</span>,{" "}
+        <span className="underline">React.js</span>, and{" "}
+        <span className="underline">Next.js</span>, I specialize in crafting
+        elegant web solutions that users love. Currently contributing my skills
+        at <span className="font-medium">H2C Development</span> for over{" "}
+        <span className="font-medium">{yearsOfExperience} years</span>, I'm
+        driven by a commitment to excellence. Holding an Engineer's degree in
+        Computer Software Engineering from{" "}
+        <span className="font-medium">SUPMTI-OUJDA</span> and a Bachelor's in
+        Computer Development from the{" "}
+        <span className="font-medium">
+          Specialized Institute Of Applied Technology NTIC
+        </span>
+        , I've built a strong foundation for my career. Let's connect and
+        explore innovative opportunities together.
+      </p>
 
       {/* <p className="mb-3">
         After graduating with a degree in{" "}

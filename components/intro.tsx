@@ -1,7 +1,7 @@
 "use client";
 
+import React, { useState } from "react";
 import Image from "next/image";
-import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
@@ -9,12 +9,24 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import myImage from "@/public/about.jpg"
+import myImage from "@/public/about.jpg";
 
 export default function Intro() {
-  const { ref } = useSectionInView("Home", 0.5);
+  const { ref } = useSectionInView("About", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const [selectedCV, setSelectedCV] = useState("en");
 
+  const handleCVChange = (event: any) => {
+    setSelectedCV(event.target.value);
+  };
+
+  const cvLinks = {
+    en: "/resume-en.pdf",
+    fr: "/resume-fr.pdf",
+  };
+  const startYear = 2019;
+  const currentYear = new Date().getFullYear();
+  const yearsOfExperience = currentYear - startYear;
   return (
     <section
       ref={ref}
@@ -63,11 +75,12 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-          <span className="font-medium">Hello, I'm Mourad.</span> I'm a{" "}
-          <span className="font-medium">full-stack developer</span> with{" "}
-          <span className="font-medium">4 years</span> of experience. I have a passion for
-          creating <span className="italic">websites and applications</span>. My expertise
-          revolves around <span className="underline">Javascript</span>.
+        <span className="font-medium">Hello, I'm Mourad.</span> I'm a{" "}
+        <span className="font-medium">Full Stack Developer</span> with{" "}
+        <span className="font-medium">{yearsOfExperience} years</span> of
+        experience. I have a passion for creating{" "}
+        <span>websites and applications</span>. My expertise revolves around{" "}
+        <span className="underline">Javascript & React.js</span>.
       </motion.h1>
 
       <motion.div
@@ -92,7 +105,7 @@ export default function Intro() {
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/CV.pdf"
+          href="/resume-en.pdf"
           target="_blank"
         >
           Download CV{" "}
