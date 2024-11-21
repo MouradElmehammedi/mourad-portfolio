@@ -18,8 +18,11 @@ import {
   SiNextdotjs,
   SiPrisma,
   SiGraphql,
-  SiPostgresql
+  SiPostgresql, 
+  SiAngular 
 } from "react-icons/si";
+import { FaJava } from "react-icons/fa6";
+import { BiLogoSpringBoot } from "react-icons/bi";
 import { TbBrandReactNative } from "react-icons/tb";
 import { DiScrum } from "react-icons/di";
 import SectionHeading from "./section-heading";
@@ -43,38 +46,38 @@ const fadeInAnimationVariants = {
 };
 
 const skillsData = [
+  { name: "JavaScript", logo: <SiJavascript /> },
+  { name: "TypeScript", logo: <SiTypescript /> },
+  { name: "Java", logo: <FaJava /> },
+  { name: "Node.js", logo: <SiNodedotjs /> },
 
-    { name: "JAVASCRIPT", logo: <SiJavascript /> },
-    { name: "TYPESCRIPT", logo: <SiTypescript /> },
-    { name: "NODE.JS", logo: <SiNodedotjs /> },
-  
+  { name: "Angular", logo: <SiAngular /> },
+  { name: "React.js", logo: <SiReact /> },
+  {
+    name: "React Native",
+    logo: <TbBrandReactNative />,
+  },
 
-    { name: "REACT.JS", logo: <SiReact /> },
-    { name: "NEXT.JS", logo: <SiNextdotjs /> },
-    {
-      name: "REACT-NATIVE",
-      logo: <TbBrandReactNative />,
-    },
-  
+  { name: "Next.js", logo: <SiNextdotjs /> },
+  { name: "Nest.js", logo: <SiNestjs /> },
+  { name: "Spring Boot", logo: <BiLogoSpringBoot /> },
 
-    { name: "HTML5", logo: <SiHtml5 /> },
-    { name: "CSS3", logo: <SiCss3 /> },
-    { name: "SASS", logo: <SiSass /> },
-    { name: "TAILWIND CSS", logo: <SiTailwindcss /> },
-  
+  { name: "MySQL", logo: <SiMysql /> },
+  { name: "MongoDB", logo: <SiMongodb /> },
+  { name: "Express.js", logo: <SiExpress /> },
+  { name: "Prisma", logo: <SiPrisma /> },
+  { name: "GraphQL", logo: <SiGraphql /> },
+  { name: "PostgreSQL", logo: <SiPostgresql /> },
 
-    { name: "MySQL", logo: <SiMysql /> },
-    { name: "NEST.JS", logo: <SiNestjs /> },
-    { name: "MONGODB", logo: <SiMongodb /> },
-    { name: "EXPRESS.JS", logo: <SiExpress /> }, 
-    { name: "Prisma", logo: <SiPrisma /> },
-    { name: "GraphQL", logo: <SiGraphql /> }, 
-    { name: "PostgreSQL", logo: <SiPostgresql /> },
+  { name: "HTML5", logo: <SiHtml5 /> },
+  { name: "CSS3", logo: <SiCss3 /> },
+  { name: "Sass", logo: <SiSass /> },
+  { name: "Tailwind CSS", logo: <SiTailwindcss /> },
 
-    { name: "GIT", logo: <SiGit /> },
-    { name: "SCRUM", logo: <DiScrum /> },
-  
+  { name: "Git", logo: <SiGit /> },
+  { name: "Scrum", logo: <DiScrum /> },
 ];
+
 
 export default function Skills() {
   const { ref } = useSectionInView("Skills");
