@@ -6,6 +6,8 @@ import ecommerceAdminImg from "@/public/ecommerce-admin.png";
 import ecommerceStoreImg from "@/public/ecommerce-store.png";
 import carQuestImg from "@/public/cars-showcase.png";
 import aiGenuisImg from "@/public/ai-generation.png";
+import trelloXImg from "@/public/trelloX.png";
+import noteWaveImg from "@/public/notewave.png";
 
 export const links = [
   // {
@@ -133,4 +135,18 @@ export const projectsData = [
     imageUrl: aiGenuisImg,
     href: "https://genius-olive-mu.vercel.app/",
   },
+  {
+    title: "TrelloX",
+    description: "A clone of the popular project management tool Trello.",
+    tags: ["React", "Next.js", "Typescript", "Tailwind"],
+    imageUrl: trelloXImg,
+    href: 'https://trellox-one.vercel.app/'
+  },
+  {
+    title: "NoteWave",
+    description:"A clone of the popular productivity tool Notion, providing seamless note-taking and organization features.",
+    tags: ["React", "Next.js", "Typescript", "Tailwind"],
+    imageUrl: noteWaveImg,
+    href: 'https://notewave-app.vercel.app/'
+  }
 ] as const;
