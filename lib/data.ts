@@ -43,15 +43,15 @@ export const educationsData = [
     title: "Baccalaureate",
     location: "ALMATAR high school, Nador, Morocco",
     description:
-      "I successfully completed my Baccalaureate in Life and Earth Sciences (SVT) at ALMATAR high school in Nador, gaining a solid foundation in scientific principles and knowledge.",
+      "I successfully completed my Baccalaureate in Life and Earth Sciences (SVT) at ALMATAR high school in Nador.",
     icon: React.createElement(LuGraduationCap),
     date: "2016 - 2017",
   },
   {
-    title: "Associate's degree in Computer Development",
+    title: "Associate's degree",
     location: "ISTA, Nador, Morocco",
     description:
-      "I dedicated two years of hard work and learning at ISTA, where I earned my Specialized Technician Associate's degree in Computer Development. This program equipped me with the skills and knowledge necessary to excel in the field of software development.",
+      "I dedicated two years of hard work and learning at ISTA, where I earned my Specialized Technician Associate's degree in Computer Development.",
     icon: React.createElement(LuGraduationCap),
     date: "2017 - 2019",
   },
@@ -59,7 +59,7 @@ export const educationsData = [
     title: "Engineer's degree",
     location: "SUPMTI, Oujda, Morocco",
     description:
-      "My journey in higher education led me to SUPMTI-OUJDA, where I am currently pursuing an Engineer's degree in Computer Software Engineering. This program allows me to deepen my understanding of software engineering and expand my technical expertise.",
+      "I completed my Engineer's degree in Computer Software Engineering at SUPMTI-OUJDA.",
     icon: React.createElement(LuGraduationCap),
     date: "2021 - 2024",
   },
@@ -67,34 +67,34 @@ export const educationsData = [
 
 export const experiencesData = [
   {
-    title: "Internship",
+    title: "Developer .NET | Internship",
     location: "Institute Descartes of Computer Science, Nador, Morocco",
     description:
-      "During my internship at the Institute Descartes of Computer Science, I was responsible for the installation and maintenance of computer operating systems and hardware and software packages. I provided regular technical assistance and conducted compatibility checks for new hardware and software to ensure they integrated seamlessly with company systems.",
+      "Part of a team that developed a new application for the institute using C#. Responsible for hardware installation, application development, database management, and server security.",
     icon: React.createElement(CgWorkAlt),
     date: "March 2019 to April 2019",
   },
   {
-    title: "Web Developer",
-    location: "LIFETIME DEVELOPERS (Freelance)",
+    title: "Full Stack Developer | Freelance",
+    location: "LIFETIME DEVELOPERS",
     description:
-      "As a Web Developer at LIFETIME DEVELOPERS (Freelance), I specialized in creating web and mobile applications using the React.js Framework and React Native. I had the opportunity to work on diverse projects, applying my expertise to deliver high-quality solutions.",
+      "Collaborated with a freelance team on a MERN Stack project to develop a SaaS application for managing user subscriptions in sports clubs.",
     icon: React.createElement(CgWorkAlt),
     date: "May 2020 to October 2020",
   },
   {
-    title: "Internship",
+    title: "Full Stack Developer | Internship",
     location: "H2C-development, Nador, Morocco",
     description:
-      "During my internship at H2C-development, I served as a Front-End developer on various projects, leveraging the React.js Framework to create engaging and user-friendly web applications. This experience allowed me to strengthen my front-end development skills.",
+      "Implemented an access control system with React and Node.js to track the real-time status of each badge. Developed features to detect and display authorized or denied access.",
     icon: React.createElement(CgWorkAlt),
     date: "October 2020 to January 2021",
   },
   {
-    title: "Full Stack Developer",
+    title: "Full Stack Developer | Full-time",
     location: "H2C-development, Nador, Morocco",
     description:
-      "I have been working as a Full Stack Developer at H2C Development since March 2021. In this role, I've contributed significantly to various projects, gaining valuable experience in both front-end and back-end development. I've played a pivotal role in building robust web applications that meet client needs and exceed expectations.",
+      "Contributed to the development of e-commerce, management, and booking platforms. Built dynamic user interfaces with React.js and Angular, ensuring responsiveness. Implemented RESTful APIs with Spring Boot and integrated secure payment solutions like Stripe.",
     icon: React.createElement(FaReact),
     date: "March 2021 - Present",
   },

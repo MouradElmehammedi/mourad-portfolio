@@ -9,7 +9,7 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import myImage from "@/public/about.jpg";
+import myImage from "@/public/about.png";
 
 export default function Intro() {
   const { ref } = useSectionInView("About", 0.5);
@@ -75,13 +75,13 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-medium">Hello, I'm Mourad.</span> I'm a{" "}
         <span className="font-medium">Full Stack Developer</span> with{" "}
-        <span className="font-medium">{yearsOfExperience} years</span> of
-        experience. I have a passion for creating{" "}
-        <span>websites and applications</span>. My expertise revolves around{" "}
-        <span className="underline">Javascript & React.js</span>.
+        <span className="font-medium">{yearsOfExperience} years</span> of experience in designing and implementing{" "}
+        <span>web applications</span> using modern technologies. Specialized in front-end and back-end development, with a strong focus on{" "}
+        <span className="underline">React.js</span>, <span className="underline">Angular</span>, <span className="underline">TypeScript</span> for the front-end, and{" "}
+        <span className="underline">Java</span>, <span className="underline">Spring Boot</span>, <span className="underline">Node.js</span> for the back-end.
       </motion.h1>
+
 
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"

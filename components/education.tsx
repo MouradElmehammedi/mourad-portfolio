@@ -28,7 +28,7 @@ export default function Education() {
                 boxShadow: "none",
                 border: "1px solid rgba(0, 0, 0, 0.05)",
                 textAlign: "left",
-                padding: "1.3rem 2rem",
+                padding: "1.3rem 2rem"
               }}
               contentArrowStyle={{
                 borderRight:
@@ -42,15 +42,15 @@ export default function Education() {
                 background:
                   theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
                 fontSize: "1.5rem",
-              }}
+              }} 
             >
-              <h3 className="font-semibold capitalize xl:w-[1000px]">
+              <h3 className="font-semibold capitalize l">
                 {item.title}
               </h3>
               <p className="font-normal !mt-0 ">{item.location}</p>
-              {/* <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                 {item.description}
-              </p> */}
+              </p>
             </VerticalTimelineElement>
           </React.Fragment>
         ))}
