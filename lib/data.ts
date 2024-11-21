@@ -97,7 +97,7 @@ export const experiencesData = [
     location: "H2C-development, Nador, Morocco",
     description:
       "Contributed to the development of e-commerce, management, and booking platforms. Built dynamic user interfaces with React.js and Angular, ensuring responsiveness. Implemented RESTful APIs with Spring Boot and integrated secure payment solutions like Stripe.",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(CgWorkAlt),
     date: "March 2021 - Present",
   },
 ] as const;
