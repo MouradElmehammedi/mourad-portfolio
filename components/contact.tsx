@@ -31,7 +31,7 @@ export default function Contact() {
         once: true,
       }}
     >
-      <SectionHeading>Contact me</SectionHeading>
+      <SectionHeading>{language === "fr" ? "Contactez-moi" : "Contact me"}</SectionHeading>
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
         {language === "fr" ? "Je suis actuellement disponible pour des projets freelance. N'hésitez pas à me contacter par email à" : "I am currently available for freelance projects. Don't hesitate to contact me at"}{" "}
