@@ -7,17 +7,23 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { educationsData } from "@/lib/data";
+import { educationsDataFr, educationsDataEn } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
+import { useLanguage } from "@/context/lang-switch-context";
 
 export default function Education() {
   const { ref } = useSectionInView("Education");
   const { theme } = useTheme();
 
+  const { language } = useLanguage();
+
+  const educationsData = language === "fr" ? educationsDataFr : educationsDataEn;
+
+
   return (
     <section id="education" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
-      <SectionHeading>My Education</SectionHeading>
+      <SectionHeading>{language === "fr" ? "Mon parcours d'études" : "My Education"}</SectionHeading>
       <VerticalTimeline lineColor="" key={1}>
         {educationsData.map((item, index) => (
           <React.Fragment key={index}>

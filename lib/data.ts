@@ -9,7 +9,8 @@ import aiGenuisImg from "@/public/ai-generation.png";
 import trelloXImg from "@/public/trelloX.png";
 import noteWaveImg from "@/public/notewave.png";
 
-export const links = [
+// Locale English "En"
+export const linksEn = [
   // {
   //   name: "Home",
   //   hash: "#home",
@@ -40,7 +41,7 @@ export const links = [
   },
 ] as const;
 
-export const educationsData = [
+export const educationsDataEn = [
   {
     title: "Baccalaureate",
     location: "ALMATAR high school, Nador, Morocco",
@@ -67,7 +68,7 @@ export const educationsData = [
   },
 ] as const;
 
-export const experiencesData = [
+export const experiencesDataEn = [
   {
     title: "Developer .NET | Internship",
     location: "Institute Descartes of Computer Science, Nador, Morocco",
@@ -102,12 +103,12 @@ export const experiencesData = [
   },
 ] as const;
 
-export const projectsData = [
+export const projectsDataEn = [
   {
     title: "Ecommerce (dashboard)",
     description:
       "An e-commerce management dashboard for efficiently managing orders, products, and store customization.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma", "Mongodb"],
+    tags: ["React", "Next.js", "Tailwind", "Prisma", "Mongodb"],
     imageUrl: ecommerceAdminImg,
     href: null,
   },
@@ -145,6 +146,149 @@ export const projectsData = [
   {
     title: "NoteWave",
     description:"A clone of the popular productivity tool Notion, providing seamless note-taking and organization features.",
+    tags: ["React", "Next.js", "Typescript", "Tailwind"],
+    imageUrl: noteWaveImg,
+    href: 'https://notewave-app.vercel.app/'
+  }
+] as const;
+
+// Locale French "Fr"
+export const linksFr = [
+  // {
+  //   name: "Accueil",
+  //   hash: "#home",
+  // },
+  {
+    name: "À propos",
+    hash: "#home",
+  },
+  {
+    name: "Compétences",
+    hash: "#skills",
+  },
+  {
+    name: "Projets",
+    hash: "#projects",
+  },
+  {
+    name: "Éducation",
+    hash: "#education",
+  },
+  {
+    name: "Expérience",
+    hash: "#experience",
+  },
+  {
+    name: "Contact",
+    hash: "#contact",
+  },
+] as const;
+
+export const educationsDataFr = [
+  {
+    title: "Baccalauréat",
+    location: "Lycée ALMATAR, Nador, Maroc",
+    description:
+      "J'ai obtenu mon Baccalauréat en Sciences de la Vie et de la Terre (SVT) au Lycée ALMATAR à Nador.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2016 - 2017",
+  },
+  {
+    title: "Diplôme de Technicien Spécialisé",
+    location: "ISTA, Nador, Maroc",
+    description:
+      "J'ai consacré deux années d'apprentissage intensif à l'ISTA, où j'ai obtenu mon diplôme de Technicien Spécialisé en Développement Informatique.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2017 - 2019",
+  },
+  {
+    title: "Diplôme d'Ingénieur",
+    location: "SUPMTI, Oujda, Maroc",
+    description:
+      "J'ai obtenu mon diplôme d'Ingénieur en Génie Logiciel à SUPMTI-Oujda.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2021 - 2024",
+  },
+] as const;
+
+export const experiencesDataFr = [
+  {
+    title: "Développeur .NET | Stage",
+    location: "Institut Descartes d'Informatique, Nador, Maroc",
+    description:
+      "Membre d'une équipe ayant développé une nouvelle application pour l'institut en utilisant C#. Responsable de l'installation matérielle, du développement d'applications, de la gestion de bases de données et de la sécurité des serveurs.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Mars 2019 à Avril 2019",
+  },
+  {
+    title: "Développeur Full Stack | Freelance",
+    location: "LIFETIME DEVELOPERS",
+    description:
+      "Collaboration avec une équipe freelance sur un projet MERN Stack pour développer une application SaaS de gestion des abonnements dans les clubs sportifs.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Mai 2020 à Octobre 2020",
+  },
+  {
+    title: "Développeur Full Stack | Stage",
+    location: "H2C-development, Nador, Maroc",
+    description:
+      "Mise en œuvre d'un système de contrôle d'accès avec React et Node.js pour suivre l'état en temps réel de chaque badge. Développement de fonctionnalités pour détecter et afficher les accès autorisés ou refusés.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Octobre 2020 à Janvier 2021",
+  },
+  {
+    title: "Développeur Full Stack | Temps plein",
+    location: "H2C-development, Nador, Maroc",
+    description:
+      "Contribution au développement de plateformes d'e-commerce, de gestion et de réservation. Création d'interfaces utilisateur dynamiques avec React.js et Angular, assurant leur réactivité. Mise en œuvre d'API RESTful avec Spring Boot et intégration de solutions de paiement sécurisées comme Stripe.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Mars 2021 - Présent",
+  },
+] as const;
+
+export const projectsDataFr = [
+  {
+    title: "E-commerce (tableau de bord)",
+    description:
+      "Un tableau de bord de gestion e-commerce pour gérer efficacement les commandes, les produits et la personnalisation du magasin.",
+    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+    imageUrl: ecommerceAdminImg,
+    href: null,
+  },
+  {
+    title: "E-commerce (boutique)",
+    description:
+      "Une boutique e-commerce élégante et conviviale proposant une large gamme de produits.",
+    tags: ["React", "Next.js", "Typescript", "Tailwind"],
+    imageUrl: ecommerceStoreImg,
+    href: "https://ecommerce-store-gilt-two.vercel.app/",
+  },
+  {
+    title: "CarQuest",
+    description:
+      "Un site d'exploration automobile permettant aux utilisateurs de découvrir des informations détaillées sur divers modèles de voitures pour trouver le véhicule idéal.",
+    tags: ["React", "Next.js", "Typescript", "Tailwind"],
+    imageUrl: carQuestImg,
+    href: "https://cars-showcase-iota-navy.vercel.app/",
+  },
+  {
+    title: "Genius",
+    description:
+      "Une plateforme web alimentée par l'IA offrant une gamme diversifiée de fonctionnalités et outils avancés, à explorer et à utiliser.",
+    tags: ["React", "Next.js", "Typescript", "Tailwind", "Prisma", "mongodb"],
+    imageUrl: aiGenuisImg,
+    href: "https://genius-olive-mu.vercel.app/",
+  },
+  {
+    title: "TrelloX",
+    description: "Un clone de l'outil populaire de gestion de projet Trello.",
+    tags: ["React", "Next.js", "Typescript", "Tailwind"],
+    imageUrl: trelloXImg,
+    href: 'https://trellox-one.vercel.app/'
+  },
+  {
+    title: "NoteWave",
+    description: "Un clone de l'outil de productivité populaire Notion, offrant des fonctionnalités fluides de prise de notes et d'organisation.",
     tags: ["React", "Next.js", "Typescript", "Tailwind"],
     imageUrl: noteWaveImg,
     href: 'https://notewave-app.vercel.app/'

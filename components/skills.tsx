@@ -28,6 +28,7 @@ import { DiScrum } from "react-icons/di";
 import SectionHeading from "./section-heading";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/context/lang-switch-context";
 
 
 
@@ -81,6 +82,7 @@ const skillsData = [
 
 export default function Skills() {
   const { ref } = useSectionInView("Skills");
+  const { language } = useLanguage();
 
   return (
     <section
@@ -88,7 +90,7 @@ export default function Skills() {
       ref={ref}
       className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
     >
-      <SectionHeading>My skills</SectionHeading>
+      <SectionHeading>{language === "fr" ? "Mes compétences" : "My skills"}</SectionHeading>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
           <motion.li
