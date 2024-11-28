@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
-  const { ref } = useSectionInView("About");
+  const { ref } = useSectionInView("À propos");
   const startYear = 2019;
   const currentYear = new Date().getFullYear();
   const yearsOfExperience = currentYear - startYear;
