@@ -8,7 +8,7 @@ import { useSectionInView } from "@/lib/hooks";
 import { useLanguage } from "@/context/lang-switch-context";
 
 export default function Projects() {
-  const { ref } = useSectionInView("Projects", 0.5);
+  const { ref } = useSectionInView("Projets", 0.5);
   const { language } = useLanguage();
 
   const projectsData = language === "fr" ? projectsDataFr : projectsDataEn;

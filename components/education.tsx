@@ -13,7 +13,7 @@ import { useTheme } from "@/context/theme-context";
 import { useLanguage } from "@/context/lang-switch-context";
 
 export default function Education() {
-  const { ref } = useSectionInView("Education");
+  const { ref } = useSectionInView("Éducation");
   const { theme } = useTheme();
 
   const { language } = useLanguage();

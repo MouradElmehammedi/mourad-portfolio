@@ -13,7 +13,7 @@ import myImage from "@/public/about.png";
 import { useLanguage } from "@/context/lang-switch-context";
 
 export default function Intro() {
-  const { ref } = useSectionInView("About", 0.5);
+  const { ref } = useSectionInView("À propos", 0.5);
   const { language } = useLanguage();
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   const [selectedCV, setSelectedCV] = useState("en");

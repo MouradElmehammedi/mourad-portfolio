@@ -13,7 +13,7 @@ import { useTheme } from "@/context/theme-context";
 import { useLanguage } from "@/context/lang-switch-context";
 
 export default function Experience() {
-  const { ref } = useSectionInView("Experience");
+  const { ref } = useSectionInView("Expérience");
   const { theme } = useTheme();
   const { language } = useLanguage();
 

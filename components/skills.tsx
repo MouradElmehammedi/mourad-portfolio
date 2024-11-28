@@ -81,7 +81,7 @@ const skillsData = [
 
 
 export default function Skills() {
-  const { ref } = useSectionInView("Skills");
+  const { ref } = useSectionInView("Compétences");
   const { language } = useLanguage();
 
   return (
