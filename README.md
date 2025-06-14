@@ -1,6 +1,6 @@
 # Portfolio Website
 
-A modern, responsive portfolio website built with Next.js and Tailwind CSS.
+A modern, responsive portfolio website built with Next.js 13, TypeScript, and Tailwind CSS, showcasing my professional journey and projects.
 
 ![Portfolio Screenshot](screenshot.png)
 
@@ -8,78 +8,101 @@ A modern, responsive portfolio website built with Next.js and Tailwind CSS.
 
 Visit the live website at: [mourad.vercel.app](https://mourad.vercel.app)
 
-## Featured Projects
-
-### iChatView
-An Android application that allows users to view their exported WhatsApp chats from iPhone on any Android device. Features a modern landing page with direct APK download and step-by-step instructions.
-
-- **Live Demo**: [ichatview.vercel.app](https://ichatview.vercel.app)
-- **Tech Stack**: React, TypeScript, Vite, Tailwind CSS
-- **Features**: Direct APK download, step-by-step instructions, responsive design
-
-![iChatView Screenshot](./public/chatview-mobile-app.png)
-
 ## Tech Stack
 
-- **Framework**: Next.js 13
-- **Styling**: Tailwind CSS
-- **Animation**: Framer Motion
+- **Framework**: [Next.js 13](https://nextjs.org/) with App Router
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animation**: [Framer Motion](https://www.framer.com/motion/)
+- **Email Service**: [React Email](https://react.email/) & [Resend](https://resend.com/)
+- **Deployment**: [Vercel](https://vercel.com/)
 - **Icons**: React Icons
-- **Email**: React Email & Resend
-- **TypeScript**: For type safety
-- **Deployment**: Vercel
 
 ## Features
 
-- 🎨 Modern and responsive design
-- ⚡ Fast performance with Next.js
-- 📱 Mobile-first approach
-- ✉️ Contact form with email integration
-- 🎭 Smooth animations and transitions
-- 🌙 Dark mode support
-- 📊 SEO optimized
+- 🎨 Modern and minimalist design
+- 📱 Fully responsive and mobile-first approach
+- 🌙 Dark/Light mode support
+- 🎭 Smooth page transitions and animations
+- 📧 Contact form with email integration
+- 🚀 Optimized performance
+- 📊 SEO friendly
+- 🌐 Multi-language support (English/French)
+
+## Featured Projects
+
+### TrelloX
+
+A Trello clone featuring project management capabilities.
+
+- **Demo**: [trellox-one.vercel.app](https://trellox-one.vercel.app/)
+- **Stack**: React, Next.js, TypeScript, Tailwind CSS
+
+### NoteWave
+
+A Notion-inspired note-taking application.
+
+- **Demo**: [notewave-app.vercel.app](https://notewave-app.vercel.app/)
+- **Stack**: React, Next.js, TypeScript, Tailwind CSS
+
+### iChatView
+
+WhatsApp chat viewer for Android devices.
+
+- **Demo**: [ichatview.vercel.app](https://ichatview.vercel.app/)
+- **Stack**: React Native, React, Vite, Tailwind CSS
+
+## Project Structure
+
+```
+├── actions/          # Server actions
+├── app/             # Next.js app router files
+├── components/      # Reusable React components
+├── context/        # React context providers
+├── email/          # Email templates
+├── lib/            # Utility functions and data
+└── public/         # Static assets
+```
 
 ## Getting Started
 
 1. Clone the repository:
+
 ```bash
-git clone [your-repo-url]
+git clone <repository-url>
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
-3. Run the development server:
+3. Create a `.env` file:
+
+```bash
+RESEND_API_KEY=your_resend_api_key
+```
+
+4. Run the development server:
+
 ```bash
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+5. Open [http://localhost:3000](http://localhost:3000)
 
-## Scripts
+## Available Scripts
 
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
 - `npm run start` - Start production server
 - `npm run lint` - Run ESLint
 
-## Project Structure
-
-```
-├── app/              # Next.js app directory
-├── components/       # React components
-├── context/         # React context
-├── lib/             # Utility functions
-├── public/          # Static assets
-└── email/           # Email templates
-```
-
 ## License
 
-MIT License - feel free to use this project as a template for your own portfolio!
+MIT License © Mourad El Mehammedi. Feel free to use this project as a template for your own portfolio!
 
 ## Contact
 
-For any questions or suggestions, please reach out through the contact form on the website. 
+For questions or suggestions, please reach out through the contact form on the website.
