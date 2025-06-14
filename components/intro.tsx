@@ -22,19 +22,11 @@ export default function Intro() {
     setSelectedCV(event.target.value);
   };
 
-  const cvLinks = {
-    en: "/resume-en.pdf",
-    fr: "/resume-fr.pdf",
-  };
-  const startYear = 2019;
+  const startYear = 2020;
   const currentYear = new Date().getFullYear();
   const yearsOfExperience = currentYear - startYear;
   return (
-    <section
-      ref={ref}
-      id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
-    >
+    <section ref={ref} id="home" className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]">
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -79,17 +71,12 @@ export default function Intro() {
           animate={{ opacity: 1, y: 0 }}
         >
           {" "}
-          <span className="font-medium">Développeur Full Stack</span> avec{" "}
-          <span className="font-medium">{yearsOfExperience} années</span>{" "}
-          d'expérience dans la conception et la mise en œuvre d'{" "}
-          <span>applications web</span> en utilisant des technologies modernes.
-          Spécialisé dans le développement front-end et back-end, avec un fort
-          accent sur <span className="underline">React.js</span>,{" "}
-          <span className="underline">Angular</span>,{" "}
-          <span className="underline">TypeScript</span> pour le front-end, et{" "}
-          <span className="underline">Java</span>,{" "}
-          <span className="underline">Spring Boot</span>,{" "}
-          <span className="underline">Node.js</span> pour le back-end.
+          <span className="font-medium">Développeur Full Stack</span> avec <span className="font-medium">{yearsOfExperience} années</span>{" "}
+          d'expérience dans la conception et la mise en œuvre d' <span>applications web et mobiles</span> en utilisant des technologies modernes.
+          Spécialisé dans le développement front-end, back-end et mobile, avec un fort accent sur <span className="underline">React.js</span>,{" "}
+          <span className="underline">React Native</span>, <span className="underline">TypeScript</span> pour le front-end et mobile, et{" "}
+          <span className="underline">Java</span>, <span className="underline">Spring Boot</span>, <span className="underline">Node.js</span> pour le
+          back-end.
         </motion.h1>
       ) : (
         <motion.h1
@@ -97,17 +84,11 @@ export default function Intro() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <span className="font-medium">Full Stack Developer</span> with{" "}
-          <span className="font-medium">{yearsOfExperience} years</span> of
-          experience in designing and implementing <span>web applications</span>{" "}
-          using modern technologies. Specialized in front-end and back-end
-          development, with a strong focus on{" "}
-          <span className="underline">React.js</span>,{" "}
-          <span className="underline">Angular</span>,{" "}
-          <span className="underline">TypeScript</span> for the front-end, and{" "}
-          <span className="underline">Java</span>,{" "}
-          <span className="underline">Spring Boot</span>,{" "}
-          <span className="underline">Node.js</span> for the back-end.
+          <span className="font-medium">Full Stack Developer</span> with <span className="font-medium">{yearsOfExperience} years</span> of experience
+          in designing and implementing <span>web and mobile applications</span> using modern technologies. Specialized in front-end, back-end and
+          mobile development, with a strong focus on <span className="underline">React.js</span>, <span className="underline">React Native</span>,{" "}
+          <span className="underline">TypeScript</span> for front-end and mobile, and <span className="underline">Java</span>,{" "}
+          <span className="underline">Spring Boot</span>, <span className="underline">Node.js</span> for the back-end.
         </motion.h1>
       )}
 
@@ -127,17 +108,16 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
           }}
         >
-          {language === "fr" ? "Contactez-moi ici" : "Contact me here"}{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+          {language === "fr" ? "Contactez-moi ici" : "Contact me here"} <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href={language === "fr" ? "/resume-fr.pdf" : "/resume-en.pdf"}
+          //href={language === "fr" ? "/resume-fr.pdf" : "/resume-en.pdf"}
+          href="/resume-fr.pdf"
           target="_blank"
         >
-          {language === "fr" ? "Télécharger CV" : "Download CV"}{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+          {language === "fr" ? "Télécharger CV" : "Download CV"} <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
         <div className="flex flex-row items-center justify-center gap-4">

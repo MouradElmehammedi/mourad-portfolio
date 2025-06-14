@@ -1,32 +1,85 @@
-# Portfolio Readme
+# Portfolio Website
 
-## Introduction
+A modern, responsive portfolio website built with Next.js and Tailwind CSS.
 
-Welcome to my portfolio repository! This project serves as a comprehensive tutorial covering various aspects of web development using Next.js 13. 
-From fundamental concepts to advanced techniques, this tutorial aims to equip you with the skills necessary to create modern, responsive websites with a sleek UI design.
+![Portfolio Screenshot](screenshot.png)
+
+## Live Demo
+
+Visit the live website at: [mourad.vercel.app](https://mourad.vercel.app)
+
+## Featured Projects
+
+### iChatView
+An Android application that allows users to view their exported WhatsApp chats from iPhone on any Android device. Features a modern landing page with direct APK download and step-by-step instructions.
+
+- **Live Demo**: [ichatview.vercel.app](https://ichatview.vercel.app)
+- **Tech Stack**: React, TypeScript, Vite, Tailwind CSS
+- **Features**: Direct APK download, step-by-step instructions, responsive design
+
+![iChatView Screenshot](./public/chatview-mobile-app.png)
+
+## Tech Stack
+
+- **Framework**: Next.js 13
+- **Styling**: Tailwind CSS
+- **Animation**: Framer Motion
+- **Icons**: React Icons
+- **Email**: React Email & Resend
+- **TypeScript**: For type safety
+- **Deployment**: Vercel
 
 ## Features
 
-- Latest Next.js 13 features
-- Next.js App Router
-- Next.js Server Actions
-- Client & Server Components
-- TypeScript (Beginner & Intermediate)
-- Tailwind CSS
-- Context API
-- Advanced Animations with Framer Motion
-- React.Email & Resend
-- Custom React hooks
-- Fresh, modern UI design
-- Light & Dark mode
-- Responsive website
+- 🎨 Modern and responsive design
+- ⚡ Fast performance with Next.js
+- 📱 Mobile-first approach
+- ✉️ Contact form with email integration
+- 🎭 Smooth animations and transitions
+- 🌙 Dark mode support
+- 📊 SEO optimized
 
-## Important Note
+## Getting Started
 
-To excel as a professional developer, it's essential to have a solid understanding of core technologies like JavaScript and CSS. 
-Consider strengthening your foundation by delving into fundamental courses on these topics.
+1. Clone the repository:
+```bash
+git clone [your-repo-url]
+```
 
-## Setup
+2. Install dependencies:
+```bash
+npm install
+```
 
-1. Configure the `RESEND_API_KEY` environment variable in the `.env.local` file.
-2. Customize the recipient email address in the `send-email.ts` action file to your own email for testing purposes. 
+3. Run the development server:
+```bash
+npm run dev
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+
+## Project Structure
+
+```
+├── app/              # Next.js app directory
+├── components/       # React components
+├── context/         # React context
+├── lib/             # Utility functions
+├── public/          # Static assets
+└── email/           # Email templates
+```
+
+## License
+
+MIT License - feel free to use this project as a template for your own portfolio!
+
+## Contact
+
+For any questions or suggestions, please reach out through the contact form on the website. 
