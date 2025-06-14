@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website built with Next.js 13, TypeScript, and Tailwind CSS, showcasing my professional journey and projects.
 
-![Portfolio Screenshot](screenshot.png)
+![Portfolio Screenshot](./public/screenshot.png)
 
 ## Live Demo
 
