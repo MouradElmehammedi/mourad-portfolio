@@ -48,22 +48,22 @@ const skillsData = [
   { name: "JavaScript", logo: <SiJavascript /> },
   { name: "TypeScript", logo: <SiTypescript /> },
   { name: "Java", logo: <FaJava /> },
-  { name: "Node.js", logo: <SiNodedotjs /> },
+  { name: "NodeJS", logo: <SiNodedotjs /> },
 
   { name: "Angular", logo: <SiAngular /> },
-  { name: "React.js", logo: <SiReact /> },
+  { name: "React", logo: <SiReact /> },
   {
     name: "React Native",
     logo: <TbBrandReactNative />,
   },
 
-  { name: "Next.js", logo: <SiNextdotjs /> },
-  { name: "Nest.js", logo: <SiNestjs /> },
+  { name: "NextJS", logo: <SiNextdotjs /> },
+  { name: "NestJS", logo: <SiNestjs /> },
   { name: "Spring Boot", logo: <BiLogoSpringBoot /> },
 
   { name: "MySQL", logo: <SiMysql /> },
   { name: "MongoDB", logo: <SiMongodb /> },
-  { name: "Express.js", logo: <SiExpress /> },
+  { name: "Express", logo: <SiExpress /> },
   { name: "Prisma", logo: <SiPrisma /> },
   { name: "GraphQL", logo: <SiGraphql /> },
   { name: "PostgreSQL", logo: <SiPostgresql /> },
@@ -82,8 +82,14 @@ export default function Skills() {
   const { language } = useLanguage();
 
   return (
-    <section id="skills" ref={ref} className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40">
-      <SectionHeading>{language === "fr" ? "Compétences technique" : "Technical skills"}</SectionHeading>
+    <section
+      id="skills"
+      ref={ref}
+      className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
+    >
+      <SectionHeading>
+        {language === "fr" ? "Compétences technique" : "Technical skills"}
+      </SectionHeading>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
           <motion.li

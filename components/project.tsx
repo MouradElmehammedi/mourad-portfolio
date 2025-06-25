@@ -13,7 +13,7 @@ export default function Project({
   description,
   tags,
   imageUrl,
-  href
+  href,
 }: any) {
   const router = useRouter();
   const ref = useRef<HTMLDivElement>(null);
@@ -35,7 +35,18 @@ export default function Project({
     >
       <section className="bg-gray-100 max-w-[38rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-8 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[16rem]">
-          <h3 className={`text-xl font-semibold ${href ? 'cursor-pointer' : ''}`} onClick={() => href ? router.push(href) : null}>{title}</h3>
+          {href ? (
+            <a
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xl font-semibold cursor-pointer"
+            >
+              {title}
+            </a>
+          ) : (
+            <h3 className="text-xl font-semibold">{title}</h3>
+          )}
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
           </p>

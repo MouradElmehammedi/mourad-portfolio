@@ -1,14 +1,14 @@
-import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+import aiGenuisImg from "@/public/ai-generation.png";
 import ecommerceAdminImg from "@/public/ecommerce-admin.png";
 import ecommerceStoreImg from "@/public/ecommerce-store.png";
-import carQuestImg from "@/public/cars-showcase.png";
-import aiGenuisImg from "@/public/ai-generation.png";
-import trelloXImg from "@/public/trelloX.png";
-import noteWaveImg from "@/public/notewave.png";
 import chatviewMobileAppImg from "@/public/ichatview-mobile-app.png";
+import noteWaveImg from "@/public/notewave.png";
+import quickchatImg from "@/public/quickchat.png";
+import savekitMobileAppImg from "@/public/savekit-mobile-app.png";
+import trelloXImg from "@/public/trelloX.png";
+import React from "react";
+import { CgWorkAlt } from "react-icons/cg";
+import { LuGraduationCap } from "react-icons/lu";
 
 export const linksEn = [
   // {
@@ -75,7 +75,8 @@ export const educationsDataEn = [
   {
     title: "Baccalaureate",
     location: "ALMATAR high school, Nador, Morocco",
-    description: "I successfully completed my Baccalaureate in Life and Earth Sciences (SVT) at ALMATAR high school in Nador.",
+    description:
+      "I successfully completed my Baccalaureate in Life and Earth Sciences (SVT) at ALMATAR high school in Nador.",
     icon: React.createElement(LuGraduationCap),
     date: "2016 - 2017",
   },
@@ -90,7 +91,8 @@ export const educationsDataEn = [
   {
     title: "Engineer's degree",
     location: "SUPMTI, Oujda, Morocco",
-    description: "I completed my Engineer's degree in Computer Software Engineering at SUPMTI-OUJDA.",
+    description:
+      "I completed my Engineer's degree in Computer Software Engineering at SUPMTI-OUJDA.",
     icon: React.createElement(LuGraduationCap),
     date: "2021 - 2024",
   },
@@ -99,7 +101,8 @@ export const educationsDataFr = [
   {
     title: "Baccalauréat",
     location: "Lycée ALMATAR, Nador, Maroc",
-    description: "J'ai obtenu mon Baccalauréat en Sciences de la Vie et de la Terre (SVT) au Lycée ALMATAR à Nador.",
+    description:
+      "J'ai obtenu mon Baccalauréat en Sciences de la Vie et de la Terre (SVT) au Lycée ALMATAR à Nador.",
     icon: React.createElement(LuGraduationCap),
     date: "2016 - 2017",
   },
@@ -114,7 +117,8 @@ export const educationsDataFr = [
   {
     title: "Diplôme d'Ingénieur",
     location: "SUPMTI, Oujda, Maroc",
-    description: "J'ai obtenu mon diplôme d'Ingénieur en Génie Logiciel à SUPMTI-Oujda.",
+    description:
+      "J'ai obtenu mon diplôme d'Ingénieur en Génie Logiciel à SUPMTI-Oujda.",
     icon: React.createElement(LuGraduationCap),
     date: "2021 - 2024",
   },
@@ -242,6 +246,23 @@ export const experiencesDataFr = [
 
 export const projectsDataFr = [
   {
+    title: "SaveKit",
+    description:
+      "Une application mobile Android conçue pour aider les utilisateurs à atteindre leurs objectifs financiers.",
+    tags: ["React Native", "React", "Firebase", "Tailwind CSS"],
+    imageUrl: savekitMobileAppImg,
+    href: "https://savekit.vercel.app/",
+  },
+  {
+    title: "iChatView",
+    description:
+      "Une application Android qui permet aux utilisateurs de visualiser leurs discussions WhatsApp exportées depuis un iPhone sur n'importe quel appareil Android.",
+    tags: ["React Native", "React", "Vite", "Tailwind CSS"],
+    imageUrl: chatviewMobileAppImg,
+    href: "https://ichatview.vercel.app/",
+  },
+
+  {
     title: "TrelloX",
     description: "Un clone de l'outil populaire de gestion de projet Trello.",
     tags: ["React", "Next.js", "Typescript", "Tailwind"],
@@ -250,32 +271,27 @@ export const projectsDataFr = [
   },
   {
     title: "NoteWave",
-    description: "Un clone de l'outil de productivité populaire Notion, offrant des fonctionnalités fluides de prise de notes et d'organisation.",
+    description:
+      "Un clone de l'outil de productivité populaire Notion, offrant des fonctionnalités fluides de prise de notes et d'organisation.",
     tags: ["React", "Next.js", "Typescript", "Tailwind"],
     imageUrl: noteWaveImg,
     href: "https://notewave-app.vercel.app/",
   },
   {
     title: "E-commerce (tableau de bord)",
-    description: "Un tableau de bord de gestion e-commerce pour gérer efficacement les commandes, les produits et la personnalisation du magasin.",
+    description:
+      "Un tableau de bord de gestion e-commerce pour gérer efficacement les commandes, les produits et la personnalisation du magasin.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
     imageUrl: ecommerceAdminImg,
-    href: null,
+    href: "https://ecommerce-admin-tau-fawn.vercel.app/",
   },
   {
     title: "E-commerce (boutique)",
-    description: "Une boutique e-commerce élégante et conviviale proposant une large gamme de produits.",
+    description:
+      "Une boutique e-commerce élégante et conviviale proposant une large gamme de produits.",
     tags: ["React", "Next.js", "Typescript", "Tailwind"],
     imageUrl: ecommerceStoreImg,
     href: "https://ecommerce-store-gilt-two.vercel.app/",
-  },
-  {
-    title: "CarQuest",
-    description:
-      "Un site d'exploration automobile permettant aux utilisateurs de découvrir des informations détaillées sur divers modèles de voitures pour trouver le véhicule idéal.",
-    tags: ["React", "Next.js", "Typescript", "Tailwind"],
-    imageUrl: carQuestImg,
-    href: "https://cars-showcase-iota-navy.vercel.app/",
   },
   {
     title: "Genius",
@@ -286,15 +302,31 @@ export const projectsDataFr = [
     href: "https://genius-olive-mu.vercel.app/",
   },
   {
-    title: "iChatView",
+    title: "QuickChat",
     description:
-      "Une application Android qui permet aux utilisateurs de visualiser leurs discussions WhatsApp exportées depuis un iPhone sur n'importe quel appareil Android.",
-    tags: ["React Native", "React", "Vite", "Tailwind CSS"],
-    imageUrl: chatviewMobileAppImg,
-    href: "https://ichatview.vercel.app/",
+      "Une application web de messagerie en temps réel permettant des conversations rapides et simples entre utilisateurs.",
+    tags: ["React", "Next.js", "WebSocket", "Tailwind", "Prisma", "mongodb"],
+    imageUrl: quickchatImg,
+    href: "https://quickchat-app.vercel.app/",
   },
 ] as const;
 export const projectsDataEn = [
+  {
+    title: "SaveKit",
+    description:
+      "An Android mobile app designed to help users achieve their financial goals.",
+    tags: ["React Native", "React", "Firebase", "Tailwind CSS"],
+    imageUrl: savekitMobileAppImg,
+    href: "https://savekit.vercel.app/",
+  },
+  {
+    title: "iChatView",
+    description:
+      "An Android application that allows users to view their exported WhatsApp chats from iPhone on any Android device.",
+    tags: ["React Native", "React", "TypeScript", "Vite", "Tailwind CSS"],
+    imageUrl: chatviewMobileAppImg,
+    href: "https://ichatview.vercel.app/",
+  },
   {
     title: "TrelloX",
     description: "A clone of the popular project management tool Trello.",
@@ -304,45 +336,43 @@ export const projectsDataEn = [
   },
   {
     title: "NoteWave",
-    description: "A clone of the popular productivity tool Notion, providing seamless note-taking and organization features.",
+    description:
+      "A clone of the popular productivity tool Notion, providing seamless note-taking and organization features.",
     tags: ["React", "Next.js", "Typescript", "Tailwind"],
     imageUrl: noteWaveImg,
     href: "https://notewave-app.vercel.app/",
   },
   {
     title: "Ecommerce (dashboard)",
-    description: "An e-commerce management dashboard for efficiently managing orders, products, and store customization.",
+    description:
+      "An e-commerce management dashboard for efficiently managing orders, products, and store customization.",
     tags: ["React", "Next.js", "Tailwind", "Prisma", "Mongodb"],
     imageUrl: ecommerceAdminImg,
-    href: null,
+    href: "https://ecommerce-admin-tau-fawn.vercel.app/",
   },
   {
     title: "Ecommerce (store)",
-    description: "A sleek and user-friendly e-commerce store featuring a wide range of products.",
+    description:
+      "A sleek and user-friendly e-commerce store featuring a wide range of products.",
     tags: ["React", "Next.js", "Typescript", "Tailwind"],
     imageUrl: ecommerceStoreImg,
     href: "https://ecommerce-store-gilt-two.vercel.app/",
   },
-  {
-    title: "CarQuest",
-    description:
-      "A car exploration website that allows users to explore detailed information about various car models, making it easy to find the perfect vehicle.",
-    tags: ["React", "Next.js", "Typescript", "Tailwind"],
-    imageUrl: carQuestImg,
-    href: "https://cars-showcase-iota-navy.vercel.app/",
-  },
+
   {
     title: "Genius",
-    description: "AI-powered web platform that offers a diverse range of cutting-edge features and tools, showcased for exploration and utilization.",
+    description:
+      "AI-powered web platform that offers a diverse range of cutting-edge features and tools, showcased for exploration and utilization.",
     tags: ["React", "Next.js", "Typescript", "Tailwind", "Prisma", "mongodb"],
     imageUrl: aiGenuisImg,
     href: "https://genius-olive-mu.vercel.app/",
   },
   {
-    title: "iChatView",
-    description: "An Android application that allows users to view their exported WhatsApp chats from iPhone on any Android device.",
-    tags: ["React Native", "React", "TypeScript", "Vite", "Tailwind CSS"],
-    imageUrl: chatviewMobileAppImg,
-    href: "https://ichatview.vercel.app/",
+    title: "QuickChat",
+    description:
+      "A real-time web messaging app designed for fast and simple conversations between users.",
+    tags: ["React", "Next.js", "WebSocket", "Tailwind", "Prisma", "mongodb"],
+    imageUrl: quickchatImg,
+    href: "https://quickchat-app.vercel.app/",
   },
 ] as const;
