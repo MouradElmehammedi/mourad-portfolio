@@ -48,29 +48,22 @@ const skillsData = [
   { name: "JavaScript", logo: <SiJavascript /> },
   { name: "TypeScript", logo: <SiTypescript /> },
   { name: "Java", logo: <FaJava /> },
-  { name: "NodeJS", logo: <SiNodedotjs /> },
 
-  { name: "Angular", logo: <SiAngular /> },
   { name: "React", logo: <SiReact /> },
+  { name: "NextJS", logo: <SiNextdotjs /> },
   {
     name: "React Native",
     logo: <TbBrandReactNative />,
   },
 
-  { name: "NextJS", logo: <SiNextdotjs /> },
-  { name: "NestJS", logo: <SiNestjs /> },
+  { name: "NodeJS", logo: <SiNodedotjs /> },
   { name: "Spring Boot", logo: <BiLogoSpringBoot /> },
 
+  { name: "Express", logo: <SiExpress /> },
   { name: "MySQL", logo: <SiMysql /> },
   { name: "MongoDB", logo: <SiMongodb /> },
-  { name: "Express", logo: <SiExpress /> },
-  { name: "Prisma", logo: <SiPrisma /> },
-  { name: "GraphQL", logo: <SiGraphql /> },
   { name: "PostgreSQL", logo: <SiPostgresql /> },
 
-  { name: "HTML5", logo: <SiHtml5 /> },
-  { name: "CSS3", logo: <SiCss3 /> },
-  { name: "Sass", logo: <SiSass /> },
   { name: "Tailwind CSS", logo: <SiTailwindcss /> },
 
   { name: "Git", logo: <SiGit /> },

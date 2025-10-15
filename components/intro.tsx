@@ -29,133 +29,174 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="relative mx-auto max-w-6xl px-4 md:px-6 py-10 md:py-6 scroll-mt-24"
     >
-      <div className="flex items-center justify-center">
-        <div className="relative">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-center gap-10 md:grid-cols-12">
+        {/* Content */}
+        <div className="md:order-1 order-2 md:col-span-7">
+          {language === "fr" ? (
+            <motion.h1
+              className="mb-4 text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+            >
+              <span className="text-gray-900 dark:text-white">
+                Développeur Full Stack
+              </span>{" "}
+              <br />{" "}
+              <span className="bg-gradient-to-r from-indigo-500 to-cyan-500 bg-clip-text text-transparent">
+                {yearsOfExperience}+ ans d’expérience
+              </span>
+            </motion.h1>
+          ) : (
+            <motion.h1
+              className="mb-4 text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+            >
+              <span className="text-gray-900 dark:text-white">
+                Full Stack Developer
+              </span>{" "}
+              <br />{" "}
+              <span className="bg-gradient-to-r from-indigo-500 to-cyan-500 bg-clip-text text-transparent">
+                {yearsOfExperience}+ years experience
+              </span>
+            </motion.h1>
+          )}
+
+          {/* Subcopy */}
+          {language === "fr" ? (
+            <motion.p
+              className="mb-6 text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.05 }}
+            >
+              Je maîtrise{" "}
+              <span className="font-medium">React, Next.js et TypeScript</span>{" "}
+              pour le front-end, ainsi que{" "}
+              <span className="font-medium">Node.js et Java/Spring Boot</span>{" "}
+              pour le back-end. <br />
+              Passionné par la création de solutions performantes et bien
+              structurées, j’aime collaborer avec les équipes pour livrer des
+              produits de qualité et faciles à maintenir.
+            </motion.p>
+          ) : (
+            <motion.p
+              className="mb-6 text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.05 }}
+            >
+              I’m skilled in{" "}
+              <span className="font-medium">
+                React, Next.js, and TypeScript
+              </span>{" "}
+              for front-end development, as well as{" "}
+              <span className="font-medium">Node.js and Java/Spring Boot</span>{" "}
+              for the back end. <br />
+              Passionate about creating high-performance, well-structured
+              solutions, I enjoy collaborating with teams to deliver quality,
+              maintainable products.
+            </motion.p>
+          )}
+
+          {/* CTAs */}
           <motion.div
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "tween",
-              duration: 0.2,
-            }}
+            className="flex flex-wrap items-center gap-4"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.15 }}
+          >
+            <Link
+              href="#contact"
+              aria-label={
+                language === "fr"
+                  ? "Aller au formulaire de contact"
+                  : "Go to contact form"
+              }
+              className="group inline-flex h-12 items-center justify-center rounded-full px-8 text-base font-semibold
+                     bg-gray-900 text-white shadow-lg shadow-black/10 ring-1 ring-black/5
+                     transition-transform duration-200 hover:scale-[1.03] active:scale-[0.98]
+                     dark:bg-white dark:text-black dark:shadow-white/10"
+              onClick={() => {
+                setActiveSection("Contact");
+                setTimeOfLastClick(Date.now());
+              }}
+            >
+              {language === "fr" ? "Me contacter" : "Contact me"}
+              <BsArrowRight className="ml-2 opacity-80 transition-transform group-hover:translate-x-1" />
+            </Link>
+
+            <a
+              href="/resume-fr.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={
+                language === "fr" ? "Télécharger mon CV" : "Download my resume"
+              }
+              className="inline-flex h-12 items-center justify-center rounded-full px-8 text-base font-semibold
+                     bg-white text-gray-900 ring-1 ring-gray-200 shadow-sm
+                     transition-transform duration-200 hover:scale-[1.03] active:scale-[0.98]
+                     dark:bg-white/10 dark:text-white dark:ring-white/10"
+            >
+              {language === "fr" ? "Télécharger CV" : "Download CV"}
+              <HiDownload className="ml-2 opacity-80 transition-transform group-hover:translate-y-0.5" />
+            </a>
+
+            <div className="ml-1 flex items-center gap-2">
+              <a
+                href="https://www.linkedin.com/in/mourad-el-mehammedi-47725a17a/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="inline-flex h-11 w-11 items-center justify-center rounded-full
+                       bg-white text-gray-700 ring-1 ring-gray-200 shadow-sm
+                       transition-transform hover:scale-105 active:scale-95
+                       dark:bg-white/10 dark:text-white/70 dark:ring-white/10"
+              >
+                <BsLinkedin />
+              </a>
+
+              <a
+                href="https://github.com/MouradElmehammedi"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                className="inline-flex h-11 w-11 items-center justify-center rounded-full
+                       bg-white text-gray-700 ring-1 ring-gray-200 shadow-sm
+                       transition-transform hover:scale-105 active:scale-95
+                       dark:bg-white/10 dark:text-white/70 dark:ring-white/10"
+              >
+                <FaGithubSquare />
+              </a>
+            </div>
+          </motion.div>
+        </div>
+
+        {/* Portrait */}
+        <div className="md:order-2 order-1 md:col-span-5 flex justify-center md:justify-end">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.96, y: 10 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ type: "tween", duration: 0.35 }}
+            className="relative"
           >
             <Image
               src={myImage}
-              alt="Ricardo portrait"
-              width="392"
-              height="392"
-              quality="95"
-              priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              alt="Mourad — portrait"
+              width={480}
+              height={480}
+              priority
+              quality={95}
+              className="aspect-square w-full max-w-[420px] rounded-3xl object-cover
+                     shadow-xl ring-1 ring-black/5 dark:ring-white/10"
             />
+            {/* subtle glow */}
+            <div className="pointer-events-none absolute -inset-4 -z-10 rounded-[2rem] bg-gradient-to-r from-indigo-500/10 to-cyan-500/10 blur-2xl" />
           </motion.div>
-
-          <motion.span
-            className="absolute bottom-0 right-0 text-4xl"
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 125,
-              delay: 0.1,
-              duration: 0.7,
-            }}
-          >
-            👋
-          </motion.span>
         </div>
       </div>
-
-      {language === "fr" ? (
-        <motion.h1
-          className="mb-10 mt-4 px-4 text-md font-light !leading-[1.5] sm:text-2xl"
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 0 }}
-        >
-          {" "}
-          <span className="font-medium">Développeur Full Stack</span> avec{" "}
-          <span className="font-medium">{yearsOfExperience} années</span>{" "}
-          d'expérience dans la conception et la mise en œuvre d'
-          <span>applications web et mobiles</span> en utilisant des technologies
-          modernes. Spécialisé dans le développement front-end, back-end et
-          mobile, avec un fort accent sur{" "}
-          <span className="underline">ReactJS</span>,{" "}
-          <span className="underline">React Native</span>,{" "}
-          <span className="underline">TypeScript</span> pour le front-end et
-          mobile, et <span className="underline">Spring Boot</span>,{" "}
-          <span className="underline">NodeJS</span>,{" "}
-          <span className="underline">NestJS</span> pour le back-end.
-        </motion.h1>
-      ) : (
-        <motion.h1
-          className="mb-10 mt-4 px-4 text-md font-light !leading-[1.5] sm:text-2xl"
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 0 }}
-        >
-          <span className="font-medium">Full Stack Developer</span> with{" "}
-          <span className="font-medium">{yearsOfExperience} years</span> of
-          experience in designing and implementing{" "}
-          <span>web and mobile applications</span> using modern technologies.
-          Specialized in front-end, back-end and mobile development, with a
-          strong focus on <span className="underline">ReactJS</span>,{" "}
-          <span className="underline">React Native</span>,{" "}
-          <span className="underline">TypeScript</span> for front-end and
-          mobile, and <span className="underline">Spring Boot</span>,{" "}
-          <span className="underline">NodeJS</span>,{" "}
-          <span className="underline">NestJS</span> for the back-end.
-        </motion.h1>
-      )}
-
-      <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.1,
-        }}
-      >
-        <Link
-          href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
-          onClick={() => {
-            setActiveSection("Contact");
-            setTimeOfLastClick(Date.now());
-          }}
-        >
-          {language === "fr" ? "Contactez-moi ici" : "Contact me here"}{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
-        </Link>
-
-        <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          //href={language === "fr" ? "/resume-fr.pdf" : "/resume-en.pdf"}
-          href="/resume-fr.pdf"
-          target="_blank"
-        >
-          {language === "fr" ? "Télécharger CV" : "Download CV"}{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
-        </a>
-
-        <div className="flex flex-row items-center justify-center gap-4">
-          <a
-            className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-            href="https://www.linkedin.com/in/mourad-el-mehammedi-47725a17a/"
-            target="_blank"
-          >
-            <BsLinkedin />
-          </a>
-
-          <a
-            className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-            href="https://github.com/MouradElmehammedi"
-            target="_blank"
-          >
-            <FaGithubSquare />
-          </a>
-        </div>
-      </motion.div>
     </section>
   );
 }
