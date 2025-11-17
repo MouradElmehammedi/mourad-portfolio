@@ -6,6 +6,7 @@ import noteWaveImg from "@/public/notewave.png";
 import quickchatImg from "@/public/quickchat.png";
 import savekitMobileAppImg from "@/public/savekit-mobile-app.png";
 import trelloXImg from "@/public/trelloX.png";
+import cityBikesImg from "@/public/CityBikesTracker.png";
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
@@ -257,23 +258,6 @@ export const experiencesDataFr = [
 
 export const projectsDataFr = [
   {
-    title: "SaveKit",
-    description:
-      "Une application mobile Android conçue pour aider les utilisateurs à atteindre leurs objectifs financiers.",
-    tags: ["React Native", "React", "Firebase", "Tailwind CSS"],
-    imageUrl: savekitMobileAppImg,
-    href: "https://savekit.vercel.app/",
-  },
-  {
-    title: "iChatView",
-    description:
-      "Une application Android qui permet aux utilisateurs de visualiser leurs discussions WhatsApp exportées depuis un iPhone sur n'importe quel appareil Android.",
-    tags: ["React Native", "React", "Vite", "Tailwind CSS"],
-    imageUrl: chatviewMobileAppImg,
-    href: "https://ichatview.vercel.app/",
-  },
-
-  {
     title: "TrelloX",
     description: "Un clone de l'outil populaire de gestion de projet Trello.",
     tags: ["React", "Next.js", "Typescript", "Tailwind"],
@@ -305,13 +289,21 @@ export const projectsDataFr = [
     href: "https://ecommerce-store-gilt-two.vercel.app/",
   },
   {
-    title: "Genius",
+    title: "CityBikes Tracker",
     description:
-      "Une plateforme web alimentée par l'IA offrant une gamme diversifiée de fonctionnalités et outils avancés, à explorer et à utiliser.",
-    tags: ["React", "Next.js", "Typescript", "Tailwind", "Prisma", "mongodb"],
-    imageUrl: aiGenuisImg,
-    href: "https://genius-olive-mu.vercel.app/",
+      "Une application moderne en temps réel, permettant d’explorer les réseaux de vélos en libre-service à travers le monde.",
+    tags: [
+      "Next.js",
+      "Typescript",
+      "Tailwind CSS",
+      "Leaflet",
+      "SWR",
+      "shadcn/ui",
+    ],
+    imageUrl: cityBikesImg,
+    href: "https://citybikes-tracker.vercel.app/",
   },
+
   {
     title: "QuickChat",
     description:
@@ -320,12 +312,11 @@ export const projectsDataFr = [
     imageUrl: quickchatImg,
     href: "https://quickchat-app.vercel.app/",
   },
-] as const;
-export const projectsDataEn = [
+
   {
     title: "SaveKit",
     description:
-      "An Android mobile app designed to help users achieve their financial goals.",
+      "Une application mobile Android conçue pour aider les utilisateurs à atteindre leurs objectifs financiers.",
     tags: ["React Native", "React", "Firebase", "Tailwind CSS"],
     imageUrl: savekitMobileAppImg,
     href: "https://savekit.vercel.app/",
@@ -333,11 +324,13 @@ export const projectsDataEn = [
   {
     title: "iChatView",
     description:
-      "An Android application that allows users to view their exported WhatsApp chats from iPhone on any Android device.",
-    tags: ["React Native", "React", "TypeScript", "Vite", "Tailwind CSS"],
+      "Une application Android qui permet aux utilisateurs de visualiser leurs discussions WhatsApp exportées depuis un iPhone sur n'importe quel appareil Android.",
+    tags: ["React Native", "React", "Vite", "Tailwind CSS"],
     imageUrl: chatviewMobileAppImg,
     href: "https://ichatview.vercel.app/",
   },
+] as const;
+export const projectsDataEn = [
   {
     title: "TrelloX",
     description: "A clone of the popular project management tool Trello.",
@@ -369,14 +362,20 @@ export const projectsDataEn = [
     imageUrl: ecommerceStoreImg,
     href: "https://ecommerce-store-gilt-two.vercel.app/",
   },
-
   {
-    title: "Genius",
+    title: "CityBikes Tracker",
     description:
-      "AI-powered web platform that offers a diverse range of cutting-edge features and tools, showcased for exploration and utilization.",
-    tags: ["React", "Next.js", "Typescript", "Tailwind", "Prisma", "mongodb"],
-    imageUrl: aiGenuisImg,
-    href: "https://genius-olive-mu.vercel.app/",
+      "A modern real-time application that allows you to explore bike-sharing networks around the world.",
+    tags: [
+      "Next.js",
+      "Typescript",
+      "Tailwind CSS",
+      "Leaflet",
+      "SWR",
+      "shadcn/ui",
+    ],
+    imageUrl: cityBikesImg,
+    href: "https://citybikes-tracker.vercel.app/",
   },
   {
     title: "QuickChat",
@@ -385,5 +384,22 @@ export const projectsDataEn = [
     tags: ["React", "Next.js", "WebSocket", "Tailwind", "Prisma", "mongodb"],
     imageUrl: quickchatImg,
     href: "https://quickchat-app.vercel.app/",
+  },
+
+  {
+    title: "SaveKit",
+    description:
+      "An Android mobile app designed to help users achieve their financial goals.",
+    tags: ["React Native", "React", "Firebase", "Tailwind CSS"],
+    imageUrl: savekitMobileAppImg,
+    href: "https://savekit.vercel.app/",
+  },
+  {
+    title: "iChatView",
+    description:
+      "An Android application that allows users to view their exported WhatsApp chats from iPhone on any Android device.",
+    tags: ["React Native", "React", "TypeScript", "Vite", "Tailwind CSS"],
+    imageUrl: chatviewMobileAppImg,
+    href: "https://ichatview.vercel.app/",
   },
 ] as const;

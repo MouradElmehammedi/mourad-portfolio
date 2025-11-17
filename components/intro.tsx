@@ -11,15 +11,23 @@ import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import myImage from "@/public/about.png";
 import { useLanguage } from "@/context/lang-switch-context";
+import CVDownloadModal from "@/components/cv-download-modal";
 
 export default function Intro() {
   const { ref } = useSectionInView("À propos", 0.5);
   const { language } = useLanguage();
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
-  const [selectedCV, setSelectedCV] = useState("en");
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const handleCVChange = (event: any) => {
-    setSelectedCV(event.target.value);
+  const handleDownloadCV = (lang: "en" | "fr") => {
+    const fileName =
+      lang === "en"
+        ? "MOURAD_EL_MEHAMMEDI_CV-EN.pdf"
+        : "MOURAD_EL_MEHAMMEDI_CV-FR.pdf";
+    const filePath = `/${fileName}`;
+
+    // Open PDF in a new tab
+    window.open(filePath, "_blank", "noopener,noreferrer");
   };
 
   const startYear = 2020;
@@ -128,10 +136,8 @@ export default function Intro() {
               <BsArrowRight className="ml-2 opacity-80 transition-transform group-hover:translate-x-1" />
             </Link>
 
-            <a
-              href="/resume-fr.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() => setIsModalOpen(true)}
               aria-label={
                 language === "fr" ? "Télécharger mon CV" : "Download my resume"
               }
@@ -142,7 +148,7 @@ export default function Intro() {
             >
               {language === "fr" ? "Télécharger CV" : "Download CV"}
               <HiDownload className="ml-2 opacity-80 transition-transform group-hover:translate-y-0.5" />
-            </a>
+            </button>
 
             <div className="ml-1 flex items-center gap-2">
               <a
@@ -197,6 +203,13 @@ export default function Intro() {
           </motion.div>
         </div>
       </div>
+
+      {/* CV Download Modal */}
+      <CVDownloadModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        onSelectLanguage={handleDownloadCV}
+      />
     </section>
   );
 }
